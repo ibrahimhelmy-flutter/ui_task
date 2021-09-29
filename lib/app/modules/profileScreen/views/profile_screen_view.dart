@@ -57,6 +57,7 @@ class ProfileScreenView extends GetView<ProfileScreenController> {
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
+
             getImage(size, options),
             Padding(
               padding: const EdgeInsets.all(12.0),
