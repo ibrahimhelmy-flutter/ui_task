@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ui_task/app/modules/firstScreen/views/first_screen_view.dart';
+import 'package:ui_task/app/modules/profileScreen/views/profile_screen_view.dart';
 
 class HomeController extends GetxController {
   var currentIndex = 0.obs;
@@ -20,7 +21,7 @@ class HomeController extends GetxController {
 
       _getScreen("ألأخبار"),
       _getScreen("السلة"),
-      _getScreen("البروفايل"),
+      ProfileScreenView(),
     ];
   }
 

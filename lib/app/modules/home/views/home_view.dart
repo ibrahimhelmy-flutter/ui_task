@@ -21,7 +21,7 @@ class HomeView extends GetView<HomeController> {
             () => Image.asset(
               "assets/images/2330100.png",
               color: controller.currentIndex.value == 2
-                  ? Colors.green
+                  ? green
                   : Colors.grey,
             ),
           ),
@@ -60,12 +60,14 @@ class HomeView extends GetView<HomeController> {
                             () => Container(
                               height: 25,
                               width: 25,
+
                               child: Image.asset(
                                 item['icon'],
                                 fit: BoxFit.contain,
                                 color: controller.currentIndex.value == index
-                                    ? Colors.green
+                                    ? green
                                     : Colors.grey,
+
                               ),
                             ),
                           ),
@@ -74,7 +76,7 @@ class HomeView extends GetView<HomeController> {
                         item['name'],
                         style: TextStyle(
                           color: controller.currentIndex.value == index
-                              ? Colors.green
+                              ? green
                               : Colors.grey,
                         ),
                       ),

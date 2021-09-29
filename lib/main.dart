@@ -9,6 +9,7 @@ void main() {
   runApp(
     GetMaterialApp(
       theme: ThemeData(
+        primaryColor: green,
         cardTheme: CardTheme(
           color: primary,
           shape: RoundedRectangleBorder(
